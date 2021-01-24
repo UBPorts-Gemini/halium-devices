@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Remotes -->
+    <remote name="gemini"
+        fetch="https://github.com/UBPorts-Gemini"
+        revision="halium-9.0" />
+        
+    <!-- Device Tree -->
+    <project path="device/xiaomi/gemini" name="android_device_xiaomi_gemini" remote="gemini" />
+    <project path="device/xiaomi/msm8996-common" name="android_device_xiaomi_msm8996-common" remote="gemini" />
+    
+    <!-- Kernel -->
+    <project path="kernel/xiaomi/msm8996" name="android_kernel_xiaomi_msm8996" remote="gemini" />
+    
+    <!-- Proprietary/Vendor blobs -->
+        <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="gemini" />
+</manifest>
